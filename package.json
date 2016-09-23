@@ -1,0 +1,28 @@
+{
+  "name": "availability-setter",
+  "version": "1.0.0",
+  "description": "Slash command for setting availability",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/FocusOnTheFamily/availability-setter.git"
+  },
+  "keywords": [
+    "slack",
+    "slash command"
+  ],
+  "author": "Nathan Harris",
+  "engines": {
+    "node": "5.1.1"
+  },
+  "dependencies": {
+    "botkit": "0.0.5",
+    "botkit-storage-mongo": "^1.0.2",
+    "mongodb": "^1.4.39",
+		"firebase": "^3.4.0"
+  }
+}
