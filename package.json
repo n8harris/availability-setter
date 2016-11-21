@@ -1,28 +1,23 @@
 {
   "name": "availability-setter",
   "version": "1.0.0",
-  "description": "Slash command for setting availability",
+  "description": "",
   "main": "index.js",
+  "files": ["config.json", "bot.js"],
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ntl",
+    "create": "claudia create --api-module bot --region us-east-1 --timeout 120 --allow-recursion --configure-slack-slash-command",
+    "update": "claudia update"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://gitlab.com/FocusOnTheFamily/availability-setter.git"
-  },
-  "keywords": [
-    "slack",
-    "slash command"
-  ],
-  "author": "Nathan Harris",
-  "engines": {
-    "node": "5.1.1"
-  },
+  "author": "Nathan Harris <nate@natepharris.me>",
   "dependencies": {
-    "botkit": "0.0.5",
-    "botkit-storage-mongo": "^1.0.2",
-    "mongodb": "^1.4.39",
-		"firebase": "^3.4.0"
+    "aws-sdk": "^2.4.6",
+    "claudia-bot-builder": "^1.4.0",
+    "firebase": "^3.4.0",
+    "slack-api": "^0.1.12",
+    "q": "^1.4.1"
+  },
+  "devDependencies": {
+    "claudia": "^1.4.4"
   }
 }
